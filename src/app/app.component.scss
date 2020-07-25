@@ -1,0 +1,49 @@
+h1 {
+    margin: 10px;
+}
+.groceries-list-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    h1 {
+        margin: 0 10px;
+    }
+    .groceries-item {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        border-right: 5px solid #e17055;
+        border-bottom: 5px solid #e17055;
+        background: #fff4d5;
+        padding: 5px 10px;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        font-weight: bold;
+        @media only screen and (min-width: 320px) and (max-width: 767px) {
+            width: 100%; 
+        }
+        .grocery-qty {
+            color: #e17055;
+            text-transform: uppercase;
+            text-align: end;
+        }
+        .grocery-item {
+            font-size: 30px;
+            border-bottom: 3px solid #b3b3b3;
+            padding-bottom: 5px;
+        }
+        .grocery-brand-type {
+            padding-top: 5px;
+        }
+        .grocery-category {
+            color: #e17055;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
